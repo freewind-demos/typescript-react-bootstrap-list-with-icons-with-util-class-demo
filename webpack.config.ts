@@ -1,4 +1,4 @@
-import { Configuration } from 'webpack';
+import {Configuration} from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import path from 'path';
 
@@ -18,6 +18,12 @@ const config: Configuration = {
       test: /\.tsx?$/,
       loader: 'ts-loader',
       exclude: /node_modules/
+    }, {
+      test: /\.css$/,
+      loader: [
+        'style-loader',
+        'css-loader'
+      ]
     }]
   },
   plugins: [
