@@ -1,5 +1,7 @@
-TypeScript "react-bootstrap" Demo
+TypeScript "react-bootstrap" list with icons use util-class Demo
 =================================
+
+使用bootstrap的utility class来实现
 
 - react-bootstrap: https://react-bootstrap.netlify.app/getting-started
 - components: https://react-bootstrap.netlify.app/components

@@ -19,11 +19,23 @@ const config: Configuration = {
       loader: 'ts-loader',
       exclude: /node_modules/
     }, {
+      test: /\.module\.css$/,
+      use: [
+        'style-loader',
+        {
+          loader: 'css-loader',
+          options: {
+            importLoaders: 1,
+            modules: true
+          }
+        }
+      ],
+    }, {
       test: /\.css$/,
       loader: [
         'style-loader',
         'css-loader'
-      ]
+      ], exclude: /\.module\.css$/
     }]
   },
   plugins: [
